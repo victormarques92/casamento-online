@@ -1,0 +1,39 @@
+//===============================================
+//                                Paleta de Cores
+//===============================================
+/*
+    Exemplo de chamadas:
+
+    background-color: map-get($colors, 'nome-da-cor');
+    @extend %bg-nome-da-cor
+
+*/
+
+$colors: (
+    'primary': #182a38,
+    'secundary': #27929d,
+    'gray': #333,
+    'black': #000,
+    'white': #fff,
+    'back': #f0ebe5,
+    'transparent': transparent
+);
+//===============================================
+//                                    Font Family
+//===============================================
+
+// Títulos
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+// font-family: 'Great Vibes', cursive;
+
+// Datas
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+// font-family: 'Pathway Gothic One', sans-serif;
+
+// Default
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+// font-family: 'Quicksand', sans-serif;
+
+// Mural
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+// font-family: 'Coiny', cursive;

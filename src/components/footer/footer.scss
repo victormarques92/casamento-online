@@ -1,0 +1,17 @@
+@import 'deps';
+
+#footer {
+    background-color: darken(map-get($colors, 'back'), 15%);
+
+    .title-footer {
+        @extend .pad-all-15;
+        @extend .text-center;
+        font-size: 40px;
+    }
+}
+
+.logo-footer {
+    display: block;
+    max-width: 50px;
+    margin: 15px auto;
+}

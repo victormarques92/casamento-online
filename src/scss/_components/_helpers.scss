@@ -1,0 +1,77 @@
+//helpers
+.hidden { display: none }
+
+.overflow-hidden { overflow: hidden }
+
+.p0 { padding: 0 }
+
+.uppercase { text-transform: uppercase; }
+
+.img-responsive { max-width: 100%; }
+
+.font-title {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+}
+
+.font-date {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.section-title {
+    background-image: url("../../img/rosa.png");
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    .text {
+        @extend .bg-back;
+        @extend .cl-gray;
+        @extend .font-title;
+        font-size: 40px;
+        font-weight: 500;
+        padding: 0 50px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 50px;
+    border: 1px solid;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    transition: .15s ease-in-out;
+
+    &.danger {
+        color: #ff3547;
+        border-color: #ff3547;
+
+        &:hover {
+            background-color: #ff3547;
+            color: #ffffff;
+        }
+    }
+
+    &.warning {
+        color: #fb3;
+        border-color: #fb3;
+
+        &:hover {
+            background-color: #fb3;
+            color: #ffffff;
+        }
+    }
+
+    &.success {
+        color: #28a745;
+        border-color: #28a745;
+
+        &:hover {
+            background-color: #28a745;
+            color: #ffffff;
+        }
+    }
+}

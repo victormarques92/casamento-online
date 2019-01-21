@@ -1,0 +1,17 @@
+@import 'deps';
+
+.menu {
+    @extend .row;
+    @extend .bg-primary;
+    @extend .valign-middle;
+    @extend .halign-between;
+    @extend .pad-both-15;
+    @extend .pad-sides-30;
+    border-bottom: 1px solid lighten(map-get($colors, 'black'), 60%);
+    
+    .img-logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}

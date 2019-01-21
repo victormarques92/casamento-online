@@ -1,0 +1,65 @@
+@import 'deps';
+
+#eventos {
+    padding-top: 400px;
+    transition: 1s ease-in-out;
+
+    .item-evento {
+        @extend .bg-white;
+        @extend .pad-all-15;
+        @extend .mg-bottom-40;
+
+        .evento {
+            @extend .row;
+            border: 1px solid map-get($colors, 'back');
+            font-size: 17px;
+
+            .conteudo {
+                @extend .col;
+                @extend .pad-top-25;
+                @extend .pad-bottom-10;
+                @extend .text-center;
+
+                .title-evento {
+                    @extend .font-title;
+                    @extend .cl-primary;
+                    font-size: 50px;
+                }
+
+                .descricao-evento {
+                    margin: 0 auto;
+                    max-width: 600px;
+                }
+
+                .data-evento {
+                    @extend .mg-top-30;
+                    @extend .font-date;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+
+                hr {
+                    display: block;
+                    border-bottom: 1px solid map-get($colors, 'back');
+                    max-width: 260px;
+                    margin: 10px auto;
+                }
+
+                .local-evento {
+                    display: block;
+                    max-width: 270px;
+                    margin: 0 auto;
+                }
+            }
+
+            .mapa {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+
+    &.active {
+        @extend .pad-top-100;
+    }
+}

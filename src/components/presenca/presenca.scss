@@ -1,0 +1,72 @@
+@import 'deps';
+
+#presenca {
+    @extend .pad-bottom-70;
+    padding-top: 400px;
+    transition: 1s ease-in-out;
+
+    .convite {
+        @extend .font-title;
+        @extend .bg-white;
+        @extend .text-center;
+        @extend .pad-top-30;
+        position: relative;
+        transition: 1.5s ease-in-out;
+        height: 300px;
+
+        .ola {
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        .text-convite {
+            font-size: 25px;
+            color: #999999;
+        }
+
+        .input-form {
+            @extend .pad-top-15;
+            @extend .pad-bottom-5;
+            @extend .pad-sides-5;
+            @extend .font-title;
+            display: block;
+            width: 60vw;
+            margin: 0 auto;
+            border-bottom: 2px dotted map-get($colors, 'back');
+            font-size: 30px;
+            color: #454545;
+
+            &::placeholder {
+                color: #cccccc;
+            }
+        }
+
+        .buttons {
+            @extend .row;
+            @extend .halign-between;
+            width: 60vw;
+            margin: 40px auto;
+        }
+
+        .envelope {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 20px;
+            transition: 5s ease-in-out;
+        }
+    }
+
+    &.active {
+        @extend .pad-top-100;
+        height: 1140px;
+
+        .convite {
+            height: 600px;
+
+            .envelope {
+                top: 380px;
+            }
+        }
+    }
+}

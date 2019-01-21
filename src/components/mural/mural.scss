@@ -1,0 +1,37 @@
+@import 'deps';
+
+#mural {
+    @extend .pad-bottom-70;
+
+    .box-msg {
+        @extend .text-center;
+        @extend .pad-sides-40;
+        @extend .pad-both-60;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        font-style: italic;
+        position: relative;
+
+        &::before {
+            content: '"';
+            position: absolute;
+            font-family: 'Coiny', cursive;
+            top: -30px;
+            left: 0;
+            font-size: 90px;
+            width: 100%;
+            color: darken(map-get($colors, 'back'), 15%);
+        }
+
+        .assinatura {
+            @extend .font-title;
+            @extend .mg-top-30;
+            font-size: 40px;
+        }
+
+        .data {
+            color: #999999;
+        }
+    }
+}

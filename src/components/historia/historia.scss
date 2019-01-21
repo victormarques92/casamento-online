@@ -1,0 +1,46 @@
+@import 'deps';
+
+#historia {
+    @extend .text-center;
+    padding-top: 400px;
+    transition: 1s ease-in-out;
+
+    .introducao {
+        font-style: italic;
+        @extend .mg-bottom-70;
+    }
+
+    .box-noivos {
+        width: 410px;
+        margin: 30px auto;
+
+        .avatar-noivos {
+            height: 200px;
+            border-radius: 50%;
+            &:first-child {
+                margin-right: -15px;
+            }
+            &:last-child {
+                margin-left: -15px;
+            }
+        }
+    }
+
+    .noivos {
+        @extend .font-title;
+        @extend .cl-primary;
+        font-size: 100px;
+        font-weight: 500;
+    }
+
+    .texto {
+        @extend .mg-top-30;
+        display: block;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    &.active {
+        @extend .pad-top-100;
+    }
+}
