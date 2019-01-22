@@ -25,7 +25,7 @@
                 height: -webkit-fill-available;
                 max-width: 100%;
                 border-radius: 5px;
-                box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 
                 .img-capa {
                     @extend .mg-bottom-75;
@@ -49,13 +49,13 @@
 
                     .name {
                         @extend .mg-bottom-5;
-                        font-size: 25px;
+                        @include font-size(25);
                     }
                 }
 
                 .btn-flip {
+                    @include font-size(15);
                     position: absolute;
-                    font-size: 15px;
                     color: #CCC;
                     text-decoration: underline;
                     bottom: 15px;
@@ -78,20 +78,20 @@
                     .title-history {
                         @extend .mg-bottom-15;
                         @extend .pad-bottom-10;
-                        font-size: 25px;
+                        @include font-size(25);
                         border-bottom: 1px solid #eee;
                     }
 
                     .text-history {
                         @extend .mg-bottom-15;
-                        font-size: 18px;
+                        @include font-size(18);
                         overflow-y: auto;
                         height: 230px;
                         border-bottom: 1px solid #eee;
                     }
 
                     .insta {
-                        font-size: 15px;
+                        @include font-size(15);
                         color: #F04F33;
                     }
                 }

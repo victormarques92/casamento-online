@@ -20,7 +20,7 @@
         @extend .font-date;
         @extend .cl-white;
         @extend .uppercase;
-        font-size: 35px;
+        @include font-size(35);
         font-weight: 500;
     }
 }

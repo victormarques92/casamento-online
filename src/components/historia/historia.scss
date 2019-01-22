@@ -17,9 +17,11 @@
         .avatar-noivos {
             height: 200px;
             border-radius: 50%;
+
             &:first-child {
                 margin-right: -15px;
             }
+
             &:last-child {
                 margin-left: -15px;
             }
@@ -29,7 +31,7 @@
     .noivos {
         @extend .font-title;
         @extend .cl-primary;
-        font-size: 100px;
+        @include font-size(100);
         font-weight: 500;
     }
 

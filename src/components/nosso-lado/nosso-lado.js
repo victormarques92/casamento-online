@@ -1,4 +1,4 @@
-$('.card').click(function() {
+$('#nosso-lado .card').click(function () {
     $(this).toggleClass('active');
 });
 

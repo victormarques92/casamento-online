@@ -14,12 +14,12 @@
         position: relative;
 
         &::before {
+            @include font-size(90);
             content: '"';
             position: absolute;
             font-family: 'Coiny', cursive;
             top: -30px;
             left: 0;
-            font-size: 90px;
             width: 100%;
             color: darken(map-get($colors, 'back'), 15%);
         }
@@ -27,7 +27,7 @@
         .assinatura {
             @extend .font-title;
             @extend .mg-top-30;
-            font-size: 40px;
+            @include font-size(40);
         }
 
         .data {

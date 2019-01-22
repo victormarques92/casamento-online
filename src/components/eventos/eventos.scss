@@ -11,8 +11,8 @@
 
         .evento {
             @extend .row;
+            @include font-size(17);
             border: 1px solid map-get($colors, 'back');
-            font-size: 17px;
 
             .conteudo {
                 @extend .col;
@@ -23,7 +23,7 @@
                 .title-evento {
                     @extend .font-title;
                     @extend .cl-primary;
-                    font-size: 50px;
+                    @include font-size(50);
                 }
 
                 .descricao-evento {
@@ -34,7 +34,7 @@
                 .data-evento {
                     @extend .mg-top-30;
                     @extend .font-date;
-                    font-size: 20px;
+                    @include font-size(20);
                     font-weight: 400;
                 }
 
