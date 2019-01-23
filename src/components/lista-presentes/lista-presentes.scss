@@ -2,4 +2,19 @@
 
 #lista-presentes {
     @extend .pad-bottom-70;
+    transition: 1s ease-in-out;
+
+    .lista {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+
+        img {
+            @extend .img-responsive;
+        }
+    }
+
+    &.active {
+        @extend .pad-top-100;
+    }
 }

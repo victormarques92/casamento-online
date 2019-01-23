@@ -2,6 +2,8 @@
 
 #nosso-lado {
     @extend .pad-bottom-70;
+    padding-top: 400px;
+    transition: 1s ease-in-out;
 
     .card-container {
         @extend .col-4;
@@ -101,5 +103,9 @@
                 transform: rotateY(180deg);
             }
         }
+    }
+
+    &.active {
+        @extend .pad-top-100;
     }
 }
