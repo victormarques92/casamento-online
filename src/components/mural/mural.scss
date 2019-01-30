@@ -1,7 +1,8 @@
 @import 'deps';
 
 #mural {
-    @extend .pad-bottom-70;
+    padding-top: 400px;
+    transition: 1s ease-in-out;
 
     .box-msg {
         @extend .text-center;
@@ -33,5 +34,38 @@
         .data {
             color: #999999;
         }
+    }
+
+    .form-mural {
+        @extend .row;
+        @extend .flex-column;
+        @extend .valign-bottom;
+        width: 80vw;
+        margin: 30px auto;
+
+        .text-form,
+        .input-form {
+            @extend .pad-both-10;
+            @extend .pad-sides-15;
+            @extend .mg-bottom-20;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: Quicksand, sans-serif;
+
+            &::placeholder {
+                font-style: italic;
+                color: lighten(#454545, 20%);
+            }
+        }
+
+        .btn {
+            font-size: 20px;
+            border-radius: 5px;
+        }
+    }
+
+    &.active {
+        @extend .pad-top-100;
     }
 }

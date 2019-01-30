@@ -16,8 +16,8 @@ var x = setInterval(function () {
     var dia = $('.title-footer .dias');
 
     if (days < 10) {
-        dia.text('0' + days + ' dia');
-    } else {
+        dia.text('0' + days + ' dias');
+    }  else {
         dia.text(days + ' dias');
     }
 
@@ -27,5 +27,10 @@ var x = setInterval(function () {
     if (distance < 0) {
         clearInterval(x);
         $('.title-footer').html('Enfim casados!');
+    }
+
+    if (days == 0 && distance > 0) {
+        clearInterval(x);
+        $('.title-footer').html('Hoje é o grande dia!');
     }
 }, 1000);
